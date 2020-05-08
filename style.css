@@ -1,0 +1,235 @@
+html,body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+}
+ul{
+    margin: 0px;
+}
+nav .navbar{
+    padding: 2% 4%;
+    background-color: #e7e2e2;
+}
+nav ul li{
+    float: right;
+    font-size: 24px;
+    padding-top: 5px;
+    list-style-type: none;
+    margin: auto 1%;
+}
+.navbar img{
+    float: left;
+    /* margin-top: 2%; */
+    height: 2.8rem;
+}
+.navbar:after{
+    content:"";
+    clear: both;
+    display:block;
+}
+main img{
+    width: 100%;
+}
+.options ul{
+    list-style-type:none ;
+    float:left;
+    width:21%;
+    margin:1%;
+    padding: 1%;    
+}
+.options p,.options h3{
+    text-align: center;
+}
+.options img{
+    width: 150px;
+    height:150px;
+}
+.section{
+    margin: 30px 8%;
+    padding:22px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid #b3acac;
+}
+.content{
+    margin-left:8%;
+}
+.options:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.blocks{
+    margin: 0px 8%;
+    padding:22px;
+}
+.blocks ul{
+    list-style-type:none ;
+    float:left;
+    width:28%;
+    margin:1%;
+    padding: 1%;    
+}
+.blocks:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.quote-box p{
+    text-align: center;
+    font-size: 22px;
+}
+.quote-box{
+    background-color:#eeeded ;
+    color:#6e6e6e;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    padding:2% 30%;
+}
+.quote-box img{
+    height: 80px;
+    width: 120px;
+}
+.last-elements{
+    margin: 0px 8%;
+    padding:22px;
+    border-bottom: 2px solid grey;
+}
+.last-elements ul{
+    list-style-type:none ;
+    float:left;
+    width:21%;
+    margin:1%;
+    padding: 1%;        
+}
+.tw {
+    background: url(images/tweet.png) no-repeat left 6px;
+    padding-left:16px;
+}
+.last-elements:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.last{
+     margin: 3px 8%;
+     padding: 2px 10px;
+}
+.last-one{
+    background-color: #222121;
+    border-top:12px solid black;
+    color: #817f7f;
+}
+.last-one h2{
+    color: #383737;
+}
+blockquote{
+    margin: 0px;
+}    
+/* Media queries */
+/* Tab Styles */
+@media screen and (max-width:1500px){
+    .blocks img{
+        width: 95%;
+    }
+}
+@media screen and (max-width:837px){
+    .last-elements{
+        margin: 2px auto;
+    }
+    .last-elements ul{
+        width: 45%;
+        padding: 1%;
+    }
+    .last-elements ul:nth-child(3){
+        clear: both;
+    }
+    .options ul{
+        width: 45%;
+    }
+    nav ul li{
+        margin: 0px;
+        font-size: 20px;
+        padding: 8px 4px 0px 4px;
+    }
+    nav .navbar{
+        padding: 1% 2%;
+        background-color: #e7e2e2;
+    }
+}
+@media screen and (max-width:639px){
+    .navbar img{
+        float: none;
+        clear:left;
+        margin-left:35%;
+    }
+    nav ul li{
+        float:none;
+        display:inline-block;
+        padding: 8px 4px 0px 4px;
+    }
+    .navbar ul{
+        padding-left: 2.5rem;
+    }
+}
+/* Mobile Styles */
+@media screen and (max-width:540px){
+    nav .navbar{
+        padding: 0px;
+        margin: 0px;
+        background-color: #e7e2e2;
+    }
+    .links ul li{
+        font-size: 1.2em;
+        padding: 0.3em;      
+    }
+}
+@media screen and (max-width:518px){
+    .burger-nav{
+        display: block;   /*To give it a neccessary ht.*/;
+        height: 40px;
+        width: 100%;
+        background: url(images/burger.png) no-repeat 98% center ;  /*98%-horizonta post.*/
+        background-color: hsl(180,0%,0%);
+        cursor: pointer;
+    }
+    .navbar ul{
+        padding-left:0px;
+        background-color: #383737;
+        height:0px;
+    }
+    .navbar ul.open{
+        height:auto;
+    }
+    .navbar .links ul li{
+        display:block;
+        border-bottom:1px solid hsl(180,0%,0%);
+        padding-left:1em;;
+        color:hsl(180,0%,90%)
+    }
+    main img{
+        height:20em;
+    }   
+    .last-elements ul{
+        width: 90%;
+        margin: 10px 5%;        
+    }
+    .section ul{
+        width: 90%;
+        margin: 8px 5%;
+    }
+    .blocks ul{
+        width: 90%;
+        margin: 12px 5%;
+        font-size: 10px;
+    }
+    .blocks ul li p,.blocks ul li h3{
+        font-size:1.6em;
+    }    
+    .navbar img{
+        
+        margin-left:28%;
+    }
+}
